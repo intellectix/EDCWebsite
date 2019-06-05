@@ -118,6 +118,15 @@
                             Once a role has been created, you can add Read, Write, and Delete permissions to the various resources in your database. These permissions work at the column level, meaning if you had a table that contained First Names, Last Names, Emails, and Phone Numbers, you could specify that you would only like for this role to be able to read and write to the First Name column. From the users perspective, they do not know that the other columns exist in the table because these permissions are checked before the query is executed which prevents any possibility of data leakage. This on-the-fly permissioning is done without a developer having to create views or making any changes to their database schema.  
                        </div>
                    </div>
+                   <h4>Step 4: Add A User to the Role</h4>
+                   <div class="row">
+                        <div class="col-md-6">
+                            Once you have added all of your permissions, now you need to add users to the role. After the users have been added, when they run queries through our API, they will have immediate access to their new permissions. In addition, permissions can be added or removed in the future as the needs of your users change.
+                        </div>
+                        <div class="col-md-6">
+                            <img src="/assets/img/addUser.PNG">
+                        </div>
+                   </div>
                 </div>
             </div>
             
