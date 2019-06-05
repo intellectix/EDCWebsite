@@ -85,25 +85,39 @@
         <section class="section">
           <div class="container">
             <div class="row">
-                <div class="col-md-3" style="background-color:#f5f5f5; border-radius:10px; height: 350px">
-                    <h5 style="padding-top:25px; margin-bottom:-20px">Enterprise Data Coordinator</h2>
-                    <hr />
-                    <nav class="nav flex-column" style="margin-top:-20px; padding-bottom:10px">
-                        <a class="nav-link " href="/product.html">Overview</a>
-                        <a class="nav-link " href="/features.html">Features</a>
-                        <a class="nav-link activeLink" href="/licenses.html">Licenses</a>
-                      </nav>
-                      <h5 style="margin-bottom:-20px;">Enterprise Data Coordinator Pro</h2>
-                        <hr />
-                        <nav class="nav flex-column" style="margin-top:-20px; padding-bottom:10px">
-                            <a class="nav-link" href="/overviewpro.html">Features</a>
-                            <a class="nav-link " href="/licensespro.html">Licenses</a>
-                            <a class="nav-link " href="/pricing.html">Pricing</a>
-                          </nav>
-                </div>
-                <div class="col-md-9">
-                   <h1 style="margin-bottom:-27px">Licenses</h1>
-                   <hr />
+                <div class="col-md-12">
+                   <h1>In-Flight Permissions</h1>
+                   <p style="font-weight: 700; font-size:16px">The Enterprise Data Coordinator provides developers with the tools they need to create advanced level permissions on the fly. </p>
+                    <hr/>
+                   <h3>Step 1: Provide the EDC with a connection to your database</h3> <br />
+                   <div class="row">
+                       <div class="col-md-6">
+                           <img src="/assets/img/connectors.PNG">
+                       </div>
+                       <div class="col-md-6">
+                           Provide the EDC with the required information and it will auto-generate a connection string to either your MySQL, MS SQL, or Oracle database. Once the connection has been established, your application can now query your database by simply making calls to our OData compliant API rather than querying straight from your database.
+                       </div>
+                   </div>
+                   <br>
+                   <h3>Step 2: Create a Role</h3>
+                   <div class="row">
+                       <div class="col-md-6">
+                           Next, you need to create a user role. This is where you will determine what information you would like a group of users to have access to. For example, your application may have roles for Customer Support, H.R., and Marketing. Each of these roles have different needs, so the information they should be allowed to query should also be different. <br> By default, a role has no permissions granted, which means any users under this role will not have the ability to query any information
+                       </div>
+                       <div class="col-md-6">
+                           <img src="/assets/img/addRole.PNG">
+                       </div>
+                   </div>
+                   <br>
+                   <h3>Step 3: Add Permissions to the Role</h3>
+                   <div class="row">
+                       <div class="col-md-6">
+                            <img src="/assets/img/permission.PNG">
+                       </div>
+                       <div class="col-md-6">
+                            Once a role has been created, you can add Read, Write, and Delete permissions to the various resources in your database. These permissions work at the column level, meaning if you had a table that contained First Names, Last Names, Emails, and Phone Numbers, you could specify that you would only like for this role to be able to read and write to the First Name column. From the users perspective, they do not know that the other columns exist in the table because these permissions are checked before the query is executed which prevents any possibility of data leakage. This on-the-fly permissioning is done without a developer having to create views or making any changes to their database schema.  
+                       </div>
+                   </div>
                 </div>
             </div>
             
