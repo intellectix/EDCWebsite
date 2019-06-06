@@ -75,12 +75,21 @@
       <header class="header mb-9" >
         <div class="container" >
           <div class="row text-center" style="opacity: 1 !important">
-            <div class="col-md-12">
-                    <h1 class="display-4 fw-400">We Make Software Development 70% <span class="fw-400 pl-2" data-typing="Easier, Quicker, More Productive" data-type-speed="80"></span><span class="typed-cursor"></span></h1>
+            <div class="col-md-6 text-md-left">
+                    <h1 class="display-4 fw-400">We Make Software Development 70% Quicker</h1>
               <p class="lead-2"><b>The Enterprise Data Coordinator takes care of the most common tasks in every project, allowing you to focus on the unique features of your application and getting to market faster.</b></p>
               <br><br>
               <a class="btn btn-lg btn-primary" href="/casestudy.html" style="font-size:16px">See it in action</a>
             </div>
+            <div class="col-lg-6">
+                <div class="w3-content w3-section" style="max-width:500px">
+                    <img class="mySlides" src="/assets/img/dashboard/1.PNG" style="width:100%">
+                    <img class="mySlides" src="/assets/img/dashboard/2.PNG" style="width:100%">
+                    <img class="mySlides" src="/assets/img/dashboard/3.PNG" style="width:100%">
+                    <img class="mySlides" src="/assets/img/dashboard/4.PNG" style="width:100%">
+                    <img class="mySlides" src="/assets/img/dashboard/5.PNG" style="width:100%">
+                    <img class="mySlides" src="/assets/img/dashboard/6.PNG" style="width:100%">
+                  </div>
           
         </div>
         </div>
@@ -277,3 +286,19 @@
       <script src="assets/js/script.js"></script>
   </body>
 </html>
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2500); // Change image every 3 seconds
+    }
+    </script>
