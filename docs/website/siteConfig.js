@@ -22,7 +22,7 @@ const users = [
 
 const siteConfig = {
   title: 'EDC', // Title for your website.
-  tagline: 'A website for testing',
+  tagline: 'Making Software Development up to 70% Easier.',
   url: '/index.html', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -30,8 +30,8 @@ const siteConfig = {
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'test-site',
-  organizationName: 'facebook',
+  projectName: 'Enterprise Data Coordinator',
+  organizationName: 'Intellectix',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
@@ -43,9 +43,9 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: '/assets/img/Intellectix-logo-brain.png',
-  footerIcon: '',
-  favicon: 'C:\Users\humph\projects\github\edc\EDCWebsite\assets\img\Intellectix-logo-brain.png',
+  headerIcon: '/../img/Intellectix-logo-brain.png',
+  footerIcon: '/../img/Intellectix-logo-brain.png',
+  favicon: '/../img/Intellectix-logo-brain.png',
 
   /* Colors for website */
   colors: {

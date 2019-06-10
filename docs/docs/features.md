@@ -65,4 +65,8 @@ Copy this JWT token and paste it into the api_key textbox at the top of the page
 
 ### Pull Data In A Table
 
-Once the Swagger UI has refreshed with the users JWT token, click on the Tables tab and then the GET tab. 
+Once the Swagger UI has refreshed with the users JWT token, click on the Tables tab and then the GET tab.  
+
+The Swagger UI will expand and show you a form which asks for [OData](#) query logic.The only required fields are the connectorName and the tableName. If you provide Swagger with those two fields, it will return all the data in that table in JSON format.  
+
+
