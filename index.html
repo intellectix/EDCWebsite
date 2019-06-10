@@ -45,8 +45,9 @@
               <div class="navbar-left">
                   <button class="navbar-toggler" type="button">&#9776;</button>
                   <a class="navbar-brand" href="../index.html">
-                      <img class="logo-dark" src="assets/img/Intellectix-logo-small.png" width="120" alt="logo">
-                      <img class="logo-light" src="assets/img/Intellectix-logo-small.png" width="100" alt="logo">
+                      <img class="logo-dark" src="assets/img/Intellectix-logo-brain.png" width="40" alt="logo">
+                      <img class="logo-light" src="assets/img/Intellectix-logo-brain.png" width="40" alt="logo">
+                      <p style="color:#1b5168; font-size:20px; margin-top:20px; font-weight: 450"><b>&nbsp;EDC</b></p>
                   </a>
               </div>
               <section class="navbar-mobile">
@@ -55,39 +56,54 @@
                     <div class="dropdown nav-link">
                       <span class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Product</span>
                       <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 24.5px, 0px);">
-                        <a class="dropdown-item" href="/product.html">Overview</a>
-                        <a class="dropdown-item" href="/permissions.html">In-Flight Permissioning</a>
-                        <a class="dropdown-item" href="#">Identity</a>
+                          <a class="dropdown-item" href="/product.html">Overview</a>
+                          <a class="dropdown-item" href="/permissions.html">Identity</a>
                         <a class="dropdown-item" href="#">Security</a>
                         <a class="dropdown-item" href="#">Basic vs. Pro</a>
                       </div>
                     </div>
-                      <a class="nav-link" href="../casestudy.html">Case Study</a>
+                      
                       <a class="nav-link" href="../pricing.html">Pricing</a>
+                      <a class="nav-link" href="/faq.html">FAQ</a>
+                      <a class="nav-link" href="/documentation.html">Documentation</a>
+                      <a class="nav-link" href="#">Source Code</a>
                   </nav>
               </section>
           </div>
       </nav>
 
-      <header class="header mb-9" >
-        <div class="container" >
-          <div class="row text-center" style="opacity: 1 !important">
-            <div class="col-md-12">
-                    <h1 class="display-4 fw-400">We Make Software Development 70% <span class="fw-400 pl-2" data-typing="Easier, Quicker, More Productive" data-type-speed="80"></span><span class="typed-cursor"></span></h1>
-              <p class="lead-2"><b>The Enterprise Data Coordinator takes care of the most common tasks in every project, allowing you to focus on the unique features of your application and getting to market faster.</b></p>
-              <br><br>
-              <a class="btn btn-lg btn-primary" href="/casestudy.html" style="font-size:16px">See it in action</a>
-            </div>
-          
-        </div>
-        </div>
-      </header>
-      <!--<header class="header text-white pt-12 pb-10" style="background-image: linear-gradient(-45deg, #667eea 0%, #764ba2 100%);">
+      <section id="color" class="section py-9" style="background-color: rgba(230,230,230,0.5)">
+        <canvas class="constellation" data-color="rgba(0,0,0,0.5)" width="1920" height="966"></canvas>
+
         <div class="container">
-            <h1 class="display-4">Start New Project</h1>
-            <p class="lead-2 mt-6">This is a starting point for your next awesome project. The skeleton is ready, just populate it.</p>
+          <header class="header" >
+            <div class="container" >
+              <div class="row text-center" style="opacity: 1 !important">
+                <div class="col-md-6 text-md-left">
+                        <h1 class="display-4 fw-400">EDC</h1>
+                  <p class="lead-2"><b>A simple dynamic data access service for your application. Change your database schemas on the fly, without having to recompile. Supports multiple databases. .NET native or run as a service with a full set of APIs.</b></p>
+                  
+                  <a class="btn btn-lg btn-primary" href="/product.html" style="font-size:16px">Read The Docs</a>
+                </div>
+                <div class="col-lg-6" style="height: 300px">
+                    <div class="w3-content w3-section" style="max-width:500px; ">
+                        <img class="mySlides" src="/assets/img/dashboard/1.PNG" style="width:100%">
+                        <img class="mySlides" src="/assets/img/dashboard/2.PNG" style="width:100%">
+                        <img class="mySlides" src="/assets/img/dashboard/3.PNG" style="width:100%">
+                        <img class="mySlides" src="/assets/img/dashboard/4.PNG" style="width:100%">
+                        <img class="mySlides" src="/assets/img/dashboard/5.PNG" style="width:100%">
+                        <img class="mySlides" src="/assets/img/dashboard/6.PNG" style="width:100%">
+                      </div>
+              
+            </div>
+            </div>
+          </header>
+
+
         </div>
-    </header>-->
+      </section>
+
+      
       <!-- /.header -->
       <!-- Main Content -->
       <main class="main-content">
@@ -97,16 +113,32 @@
     | Populate the page
     |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
     !-->
-    <section class="section" style="margin-top:-100px; background-color:rgba(230,230,230,0.5)">
+    <section class="section">
         <div class="container">
           <header class="section-header">
-            <h2>We Auto-Generate Secure OData Compliant Web APIs For All Of Your Backend Data Stores</h2>
+            <h2>Auto Generated API's (No Code Required)</h2>
+            <h4>Instant. Queryable. Multi-platform.</h4>
             <hr>
           </header>
 
+          <div class="row text-center">
+            <div class="col-md-4">
+              <h5><i class="ti-reload"></i> Instant Generation</h5>
+              <p>Enter the connection string to your backend data source and the EDC's dynamic data access service instantly generates APIs for your data and database objects (e.g. Tables, Views, Stored Procedures, Schemas, etc.). Changes to your backend schema are immediately reflected in the API.<br><a href="#">See how it works.</a></p>
+            </div>
+            <div class="col-md-4">
+              <h5><i class="ti-cloud-up"></i> Fully Queryable</h5>
+              <p>All our REST endpoints are OData compliant. OData is an open protocol to allow the creation and consumption of queryable and interoperable RESTful APIs in a simple and standard way.</p>
+            </div>
+            <div class="col-md-4">
+              <h5><i class="ti-server"></i> Any Database</h5>
+              <p>The EDC supports multiple popular SQL databases including MS SQL, MySQL, and Oracle.</p>
+              
+            </div>
+          </div>
 
 
-          <div class="row gap-y">
+          <!-- <div class="row gap-y">
 
 
 
@@ -186,21 +218,8 @@
         </div>
       </section>
 
-      <section class="section py-7">
-        <div class="container">
-          <div class="row gap-y align-items-center">
-            <div class="col-md-9">
-              <h4 class="mb-0 text-center text-md-left">See how the EDC can save you time and increase productivity <i class="ti-arrow-right"></i></h4>
-            </div>
 
-            <div class="col-md-3 text-center text-md-right">
-                    <a class="btn btn-lg btn-primary" href="#" >Read the Case Study</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" style="background-color:rgba(230,230,230,0.5)" >
+      <section class="section" style="" >
         <div class="container">
           <header class="section-header">
             <h2>Write apps in any language you choose</h2>
@@ -229,10 +248,10 @@
               </div>
           </div>
 
-        </div>
+        </div> -->
       </section>
 
-      <section class="section" >
+      <section class="section" style="background-color:rgba(230,230,230,0.5)">
             <div class="container">
               <header class="section-header">
                 <h2>Think we could be a great fit?</h2>
@@ -274,3 +293,19 @@
       <script src="assets/js/script.js"></script>
   </body>
 </html>
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2500); // Change image every 3 seconds
+    }
+    </script>

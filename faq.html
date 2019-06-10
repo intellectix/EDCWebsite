@@ -88,48 +88,10 @@
         <section class="section">
           <div class="container">
             <div class="row">
+               
                 <div class="col-md-12">
-                   <h1>In-Flight Permissions</h1>
-                   <p style="font-weight: 700; font-size:16px">The Enterprise Data Coordinator provides developers with the tools they need to create advanced level permissions on the fly. </p>
-                    <hr/>
-                   <h3>Step 1: Provide the EDC with a connection to your database</h3> <br />
-                   <div class="row">
-                       <div class="col-md-6">
-                           <img src="/assets/img/connectors.PNG">
-                       </div>
-                       <div class="col-md-6">
-                           Provide the EDC with the required information and it will auto-generate a connection string to either your MySQL, MS SQL, or Oracle database. Once the connection has been established, your application can now query your database by simply making calls to our OData compliant API rather than querying straight from your database.
-                       </div>
-                   </div>
-                   <br>
-                   <h3>Step 2: Create a Role</h3>
-                   <div class="row">
-                       <div class="col-md-6">
-                           Next, you need to create a user role. This is where you will determine what information you would like a group of users to have access to. For example, your application may have roles for Customer Support, H.R., and Marketing. Each of these roles have different needs, so the information they should be allowed to query should also be different. <br><br> By default, a role has no permissions granted, which means any users under this role will not have the ability to query any information. If a query is tried, the system will return an error to the user telling them that the table does not exist.
-                       </div>
-                       <div class="col-md-6">
-                           <img src="/assets/img/addRole.PNG">
-                       </div>
-                   </div>
-                   <br>
-                   <h3>Step 3: Add Permissions to the Role</h3>
-                   <div class="row">
-                       <div class="col-md-6">
-                            <img src="/assets/img/permission.PNG">
-                       </div>
-                       <div class="col-md-6">
-                            Once a role has been created, you can add Read, Write, and Delete permissions to the various resources in your database. These permissions work at the column level, meaning if you had a table that contained First Names, Last Names, Emails, and Phone Numbers, you could specify that you would only like for this role to be able to read and write to the First Name column. From the users perspective, they do not know that the other columns exist in the table because these permissions are checked before the query is executed which prevents any possibility of data leakage. This on-the-fly permissioning is done without a developer having to create views or making any changes to their database schema.  
-                       </div>
-                   </div>
-                   <h4>Step 4: Add A User to the Role</h4>
-                   <div class="row">
-                        <div class="col-md-6">
-                            Once you have added all of your permissions, now you need to add users to the role. After the users have been added, when they run queries through our API, they will have immediate access to their new permissions. In addition, permissions can be added or removed in the future as the needs of your users change.
-                        </div>
-                        <div class="col-md-6">
-                            <img src="/assets/img/addUser.PNG">
-                        </div>
-                   </div>
+                   <h1>Frequently Asked Questions</h1>
+                   <hr />
                 </div>
             </div>
             
