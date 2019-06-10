@@ -1,0 +1,9 @@
+{
+  "docs": {
+    "Enterprise Data Coordinator": ["overview", "doc2"],
+    "Enterprise Data Coordinator Pro": ["doc2"]
+  },
+  "docs-other": {
+    "First Category": ["doc4", "doc5"]
+  }
+}
