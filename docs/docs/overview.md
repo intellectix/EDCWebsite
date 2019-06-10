@@ -10,7 +10,7 @@ At a high level, this allows you to build flexible enterprise applications which
 
 ## Integration with your application
 
-EDC can either be run as a stand alone service, or integrated into your .Net application directly. If you run EDC as a stand alone service, you can write your application in any language and use the EDC APIs interact with your data.
+EDC can either be run as a stand alone service, or integrated into your .Net application directly. If you run EDC as a stand alone service, you can write your application in any language and use the EDC APIs to interact with your data.
 
 [Integrating with your .Net Application (native)](#)  
 [Integrating with your Non-.Net Application](#)

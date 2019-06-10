@@ -1,7 +1,7 @@
 {
   "docs": {
-    "Enterprise Data Coordinator": ["overview", "doc2"],
-    "Enterprise Data Coordinator Pro": ["doc2"]
+    "Enterprise Data Coordinator": ["overview", "features","get-started", "licenses"],
+    "Enterprise Data Coordinator Pro": ["features-pro", "licenses-pro"]
   },
   "docs-other": {
     "First Category": ["doc4", "doc5"]
