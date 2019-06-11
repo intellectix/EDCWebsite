@@ -1,9 +1,5 @@
 {
   "docs": {
-    "Enterprise Data Coordinator": ["overview", "features","get-started", "licenses"],
-    "Enterprise Data Coordinator Pro": ["features-pro", "licenses-pro"]
-  },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
+    "Enterprise Data Coordinator": ["overview", "edc-server","edc-net-native", "edc-net-native-pro"]
   }
 }
