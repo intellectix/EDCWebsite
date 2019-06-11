@@ -23,4 +23,8 @@ After clicking on a database, simply fill out the form (all fields are required)
 
 If the EDC successfully reaches a connection, the system will return you to the Connectors page and you should see your new connector displayed in the list. You can now use this connector to query your database through our API.  
 
-## Editing a Connector
+## Editing a Connector  
+
+To edit a connector, click on the "Edit" button on the connectors page.  
+
+This will take you to a page which will allow you to update any of the information you provided when you added the connector, as well as [create user joins](/docs/create-user-join).
