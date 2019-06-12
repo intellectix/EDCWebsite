@@ -218,3 +218,14 @@ $.ajax({
 This will delete the object with an ID of 1 from the "people" table inside of the "test" connector.
 
 ### Back-End
+
+Create a Delete method in your controller which takes an items ID as a parameter and call DeleteRow  
+
+```c#
+public ActionResult Delete(int id)
+{
+    TableOperations.DeleteRow("test","people", id.ToString());
+    //Return to an index page
+    return RedirectToAction("Index");
+}
+```
