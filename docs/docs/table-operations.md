@@ -4,7 +4,7 @@ title: Table Operations
 sidebar_label: Table Operations
 ---
 
-The EDC provides users with the ability to use OData to query their database.  
+The EDC provides users with the ability to use OData to query their database tables.  
 
 Learn more about OData <a href="https://www.odata.org/getting-started/" target="_blank">here.</a>  
 
