@@ -4,4 +4,6 @@ title: Using The Dashboard
 sidebar_label: Using The Dashboard
 ---
 
-## Get
+## Overview
+
+The EDC dashboard allows you to view important high-level information quickly.

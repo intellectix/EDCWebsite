@@ -127,7 +127,6 @@ public ActionResult Post(ViewModel model)
 {
     if(ModelState.IsValid)
     {
-        model.BuildConnectionString();
         model = TableOperations.CreateNewRow("test", "people", model)
     }
     return Json(model);
@@ -170,7 +169,6 @@ public ActionResult Post(ViewModel model)
 {
     if(ModelState.IsValid)
     {
-        model.BuildConnectionString();
         model = TableOperations.UpdateRow("test", "people", model)
     }
     return Json(model);
@@ -185,7 +183,6 @@ public ActionResult Post(ViewModel model)
 {
     if(ModelState.IsValid)
     {
-        model.BuildConnectionString();
 
         if (model.Id == 0)
             model = TableOperations.CreateNewRow("test", "people", model);
