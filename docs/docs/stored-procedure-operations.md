@@ -8,13 +8,11 @@ The EDC provides users with the ability to use OData to query their database sto
 
 Learn more about OData <a href="https://www.odata.org/getting-started/" target="_blank">here.</a>  
 
-For our examples, we will assume that we have generated a Connector called "test" and we have a stored procedure called "peopleSproc".  
+For this example, assume that a Connector called "AdventureWorks" has been created and the database has a stored procedure called "StateSales".   
 
-## Get Data From Stored Procedures  
+## Get Data From Stored Procedures 
 
-### Front-End
-
-One of the quickest ways to make a GET request to your database is to simply make an AJAX call with following url:  
+One of the quickest ways to make a GET request to a database is to simply make an AJAX call with following url:  
 
 ```js
 ../api/<connector>/_sproc/<sproc_name>
@@ -23,16 +21,16 @@ One of the quickest ways to make a GET request to your database is to simply mak
 In this example, our query string would look like this:  
 
 ```js
-../api/test/_sproc/peopleSproc
+../api/AdventureWorks/_sproc/StateSales
 ```  
 
-This is telling the EDC api to make a request to the "peopleSproc" view in the "test" connector. The full AJAX call would look similar to the following:  
+This is telling the EDC api to make a request to the "StateSales" view in the "AdventureWorks" connector. The full AJAX call would look similar to the following:  
 
 ```js
 $.ajax({
     type: "GET",
     content: "application/json",
-    url: "/api/test/_sproc/peopleSproc",
+    url: "/api/AdventureWorks/_sproc/StateSales",
     success: function(result) {
         // It worked!
         console.log(result)
@@ -43,55 +41,37 @@ $.ajax({
 In a front-end application like React, you might use [axios](#):  
 
 ```js
-axios.get('/api/test/_sproc/peopleSproc')
+axios.get('/api/AdventureWorks/_sproc/StateSales')
 .then(result => {
     //It worked
     console.log(result)
 })
 ```  
 
-### Back-End  
-
-In addition to making calls in the views of your application, the EDC also supports making calls from your back-end controllers as well using SprocOperations.GetAll().
-
-```c#
-public ActionResult GET(ProcModel model)
-{
-    var result = StoredProcedure.Execute("test", "peopleSproc", model);     
-    return View("ViewA", result);    
-}
-```
-
 ### Result
 
-The EDC API will always return a JSON object. In our example, we would have gotten the information back from the EDC:  
+The EDC API will always return a JSON object. In our example, the following information would be returned from the EDC:
 
 ```json
 [
     {
         "id": 1,
-        "name": "Jim",
-        "age": 23,
-        "city": "Seattle",
-        "state": "Washington"
+        "StateID": 1,
+        "StateSales": 150434
     },
     {
         "id": 2,
-        "name": "Bob",
-        "age": 31,
-        "city": "Boston",
-        "state": "Massachusetts"
+        "StateID":2,
+        "StateSales":87555
     },
     {
         "id": 3,
-        "name": "Joe",
-        "age": 27,
-        "city": "Baltimore",
-        "state": "Maryland"
+        "StateID":3,
+        "StateSales":45000
     }
 ]
 ```  
 
-From this point, you can interact with your data how you normally would within your application.
+From this point, applications can interact with the data just like a normal JSON response.
 
 

@@ -1,9 +1,7 @@
 {
   "docs": {
     "Overview": ["overview"],
-    "EDC Server Overview [Free]": ["getting-started","install-config","create-connector","table-operations", "view-operations", "stored-procedure-operations", "database-operations", "using-swagger", "using-the-dashboard", "sample-code", "tutorial"],
-    "EDC Server Overview [Pro]": ["getting-started-pro", "install-config-pro", "auth-server-config", "create-user", "create-role", "add-user-to-role", "add-permissions-to-role", "working-with-cache", "create-user-join", "using-the-dashboard-pro"],
-    "EDC .Net Native": ["getting-started-native", "install-config-native", "create-connector-native", "table-operations-native", "view-operations-native", "stored-procedure-operations-native", "database-operations-native", "using-swagger-native", "using-the-dashboard-native", "sample-code-native", "tutorial-native"],
-    "EDC .Net Native [Pro]": []
+    "EDC Server Overview [Free]": ["getting-started","install-config","create-connector","table-operations", "view-operations", "stored-procedure-operations", "database-operations", "using-swagger", "using-the-dashboard", "auth-server-config", "create-user", "create-role", "add-user-to-role", "add-permissions-to-role","working-with-cache","create-user-join", "sample-code", "tutorial"],
+    "EDC .Net Native": ["getting-started-native", "install-config-native", "create-connector-native", "table-operations-native", "view-operations-native", "stored-procedure-operations-native", "database-operations-native", "using-swagger-native", "using-the-dashboard-native", "sample-code-native", "tutorial-native"]
   }
 }

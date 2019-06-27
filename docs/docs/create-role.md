@@ -4,18 +4,18 @@ title: Creating a Role
 sidebar_label: Creating a Role
 ---
 
-## Create Role
+## Create Role [PRO]
 
-When you are logged into the EDC Dashboard, click the "Roles" link on the left of the page.  
+Once logged into the EDC Dashboard, click the "Roles" link on the left of the page.  
 
 Once on the Roles page, click the "Add Role" button in the top right corner.  
 
-Next, you must provide a unique Name, a Description, and an Active/Inactive status for the role. Then click "Next."
+Next, provide a unique Name, a Description, and an Active/Inactive status for the role. Then click "Next."
 
-If the EDC successfully creates the role, the system will return you to the Role's Edit page. You can now add users and permissions to this role.  
+If the EDC successfully creates the role, the system will redirect to the Role's Edit page. Users and permissions can now be added to this role.  
 
 ## Editing a Role  
 
-To edit a Role, click on the username of the role you wish to edit.
+To edit a Role, click on the username of the role to edit.
 
-This will take you to the Role's Edit page. The first tab will show you the basic information about the role that you provided when you created the role. The next tab will allow you to add different database permissions to that role. Finally, the last tab will allow you to add users to the role so that your system users can begin querying data.
+The EDC will redirect to the Role's Edit page. The first tab will show the basic information about the role that was provided when the role was created. The next tab will allow users to add different database permissions to that role. Finally, the last tab will allow for users to be added to the role so that users can begin querying data.
