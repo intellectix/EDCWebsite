@@ -4,13 +4,14 @@ title: Using the Dashboard
 sidebar_label: Using the Dashboard
 ---
 
-## Overview
+## Overview    
+
 
 The EDC dashboard allows users to view important high-level information quickly.  
 
-```html
-insert dashboard pic here
-```
+Once the DLL has been installed, boot up your project and add '/edc' to the end of your URL. The EDC dashboard will automatically compile itself and load.
+
+![Dashboard](/docs/assets/dashboard.png)
 
 The top of the dashboard shows the number of database requests the EDC has received today, the number of unique IP Addresses that have requested data, and the number of failed requests.  
 

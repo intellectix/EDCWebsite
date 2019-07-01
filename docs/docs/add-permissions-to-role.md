@@ -3,7 +3,7 @@ id: add-permissions-to-role
 title: Add Permissions to a Role
 sidebar_label: Add Permissions to a Role
 ---
-###PRO 
+<div class="note" style="padding: 8px 35px 8px 14px; margin-bottom: 20px; text-shadow: 0 1px 0 rgba(255,255,255,0.5); border-radius: 4px; color: #3a87ad; background-color: #d9edf7; border-color: #bce8f1;">EDC Pro Subscription Required</div> 
 
 In order for Users to access a database through the EDC, they need to be assigned to a Role. On top of that, the Role must also have specific database Permissions applied to it. By default, all of the data in your database is not able to be seen until permissions are granted.  
 
